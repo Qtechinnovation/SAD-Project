@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Mate&display=swap" rel="stylesheet">
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            html, body {
+                height: 100%;
+            }
+            .hero {
+                position: relative;
+                height: 100vh;
+                background: url('https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExM2dmY3c5ZGlxa254MzN2aXA3dWw5azIyNGpuMmMwM3hydGYyeGVmZSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/1Z7Kvmxk9Iob6/giphy.webp') no-repeat center center/cover;
+                display: flex; /* Enable flexbox */
+                justify-content: center; /* Center horizontally */
+                align-items: center; /* Center vertically */
+                overflow: hidden;
+            }
+            #title {
+                font-size: 40vw; /* Responsive font size */
+                line-height: 1; /* Match font size */
+                color: rgb(0, 0, 0);
+                text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.329);
+                white-space: nowrap; /* Prevent text wrapping */
+                font-family: "Times New Roman", serif;
+            }
+            .content h2 {
+                margin: 20px;
+                text-align: center;
+                color: #333;
+                font-size: 3vw;
+                line-height: 1.5;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="hero">
+            <div class="overlay"></div>
+            <h1 id="title">SAD</h1>
+        </div>
+        <div class="content">
+            <h2>Seasonal Affective Disorder</h2>
+        </div>
+        <footer>
+            <p>&copy; 2024 Qtechinnovation, Licensed under the MIT License. <a href="https://github.com/Qtechinnovation/SAD-Project">GitHub</a></p>
+            
+        </footer>
+    </body>
+</html>
