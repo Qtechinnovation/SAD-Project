@@ -13,6 +13,9 @@
             html, body {
                 height: 100%;
             }
+            img {
+                border-radius: 20px;
+            }
             .hero {
                 position: relative;
                 height: 100vh;
@@ -30,12 +33,99 @@
                 white-space: nowrap; /* Prevent text wrapping */
                 font-family: "Times New Roman", serif;
             }
-            .content h2 {
+            .content1 {
+                font-family: sans-serif;
+                padding: 20px;
+                background-color: #00000025;
+                border-radius: 20px;
+                margin-top: 20px;
+                margin-left: 20px;
+                margin-right: 20px;
+            }
+            .content2 {
+                font-family: sans-serif;
+                padding: 20px;
+                background-color: #00000025;
+                border-radius: 20px;
+                margin-top: 20px;
+                margin-left: 20px;
+                margin-right: 20px;
+            }
+            .content1 h2 {
                 margin: 20px;
                 text-align: center;
                 color: #333;
                 font-size: 3vw;
                 line-height: 1.5;
+            }
+            .content1 h3 {
+                margin: 20px;
+                text-align: center;
+                color: #333;
+                font-size: 2.8vw;
+                line-height: 1.5;
+            }
+            .content2 h2 {
+                margin: 20px;
+                text-align: center;
+                color: #333;
+                font-size: 3vw;
+                line-height: 1.5;
+            }
+            .content2 h3 {
+                margin: 20px;
+                text-align: center;
+                color: #333;
+                font-size: 2.8vw;
+                line-height: 1.5;
+            }
+            .alignleft {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 20px;
+            }
+            .alignleft img {
+                width: 100%;
+            }
+            .alignright img {
+                width: 100%;
+            }
+            .alignright {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 20px;
+            }
+            @media screen and (min-width: 800px) {
+                .alignleft {
+                    margin-right: 20px;
+                    padding-left: 20px;
+                }
+                .alignleft img {
+                    float: left;
+                    width: 100%;
+                }
+                .content1 {
+                    width: 50%;
+                    float: right;
+                    margin-left: 0%;
+                }
+                .content2 {
+                    width: 50%;
+                    float: left;
+                }
+                footer {
+                    clear: both;
+                }
+                .alignright {
+                    margin-left: 20px;
+                    padding-right: 20px;
+                }
+                .alignright img {
+                    float: right;
+                    width: 100%;
+                }
             }
         </style>
     </head>
@@ -44,12 +134,50 @@
             <div class="overlay"></div>
             <h1 id="title">SAD</h1>
         </div>
-        <div class="content">
+        <div class="content1">
             <h2>Seasonal Affective Disorder</h2>
+            <p>Seasonal Affective Disorder can seriously affect your mental health. It can cause feelings of sadness, anxiety, and depression. SAD is common ailment that occurs during specific seasons. The most common example of SAD the "winter blues", depressive episodes that onset in the winter.</p>
+            <h3>Symptoms</h3>
+            <p>Some common symptoms include:</p>
+            <ul>
+                <li>Persistent sad, anxious, or “empty” mood most of the day, nearly every day, for at least 2 weeks</li>
+                <li>Feelings of hopelessness or pessimism</li>
+                <li>Feelings of irritability, frustration, or restlessness</li>
+                <li>Feelings of guilt, worthlessness, or helplessness</li>
+                <li>Loss of interest or pleasure in hobbies and activities</li>
+                <li>Decreased energy, fatigue, or feeling slowed down</li>
+                <li>Difficulty concentrating, remembering, or making decisions</li>
+                <li>Changes in sleep or appetite or unplanned weight changes</li>
+                <li>Physical aches or pains, headaches, cramps, or digestive problems that do not have a clear physical cause and do not go away with treatment</li>
+                <li>Thoughts of death or suicide or suicide attempts</li>
+            </ul>
+            <p>Additional symptoms can occur depending on which seasons onset the disorder.</p>
+        </div>
+        <div class="alignleft">
+            <img src="Assets/Depression.png">
+        </div>
+        <div class="content2">
+            <h3>Who gets SAD?</h3>
+            <p>In most cases, SAD appears during young adulthood, and can reoccur afterward into adulthood. SAD is more common among women than men, and occurs more commonly in people with deppression or Bipolar Disorder, especially people with Bipolar II. It can also sometimes run in families.</p>
+        </div>
+        <div class="content2">
+            <h3>Treatments</h3>
+            <p>Some treatments for SAD are available, and include:</p>
+            <ul>
+                <li>Light Therapy</li>
+                <li>Psychotherapy</li>
+                <li>Antidepressant medication</li>
+                <li>Vitamin D</li>
+            </ul>
+            <p>It is important to note that Light Therapy and Vitamin D are only applicable to winter-onset SAD.</p>
+        </div>
+        <div class="alignright">
+            <img src="Assets/winter.png">
         </div>
         <footer>
+            <br>
             <p>&copy; 2024 Qtechinnovation, Licensed under the MIT License. <a href="https://github.com/Qtechinnovation/SAD-Project">GitHub</a></p>
-            
+            <br>
         </footer>
     </body>
 </html>
